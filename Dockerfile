@@ -1,4 +1,7 @@
-FROM openjdk:11-jre-slim
+FROM arm32v7/alpine
+#FROM openjdk:11-jre-slim
+
+RUN apk --update add openjdk8-jre
 
 WORKDIR /app
 COPY docker /
